@@ -1,0 +1,80 @@
+@import 'styles/_colors.scss';
+@import 'styles/_fonts.scss';
+
+
+.notes-collapse {
+
+  .notes-content {
+    height: 100%;
+
+    .notes-view {
+      position: relative;
+      height: 100%;
+
+      .notes-head {
+        padding: 12px;
+        background: $navy1;
+        width: auto;
+        position: relative;
+
+        .back-button {
+          color: white;
+          margin-bottom: 8px;
+          margin-top: 0;
+
+          .back-to-protocol {
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+
+        h3 {
+          margin: 0;
+          color: white;
+
+          button {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .notes-body {
+        padding: 16px;
+        height: calc(100% - 109px);
+        overflow-y: scroll;
+        position: relative;
+
+        div.notes-list {
+          margin-top: 0;
+
+          .note-task {
+            font-size: 13px;
+            color: $navy2;
+            margin-bottom: 8px;
+          }
+          .note-text {
+            color: $navy1;
+            margin-top: 0;
+          }
+
+          &:first-of-type {
+            .note-task {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

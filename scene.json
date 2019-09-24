@@ -1,0 +1,64 @@
+{
+    "Table": {
+        "components": [
+            { "component": "Table", "props": { "type": "Table", "id": 1 } }
+        ],
+        "position": {"left": 10, "top": 630}
+    },
+    "Shelf": {
+        "components": [
+            { "component": "Shelf", "props": { "type": "Shelf", "id": 1 } }
+        ],
+        "position": {"left": 350, "top": 300}
+    },
+    "Pipette Rack": {
+        "components": [
+            { "component": "Pipette Rack", "props": { "type": "Pipette Rack", "id": 1 } }
+        ],
+        "position": {"left": 73, "top": 389}
+    },
+    "Pipettes": {
+        "components": [
+            { "component": "Pipette", "props": { "type": "P2", "id": 1, "minVol": 0.2, "maxVol": 20, "volume": 0.2, "volChange": 0.1, "description": "P 2 micropipette. Used to draw up and dispense volumes of liquid between 0.2 and 2 microliters." } },
+            { "component": "Pipette", "props": { "type": "P20", "id": 2, "minVol": 2, "maxVol": 20, "volume": 2, "volChange": 0.5, "description": "P 20 micropipette. Used to draw up and dispense volumes of liquid between 2 and 20 microliters." } },
+            { "component": "Pipette", "props": { "type": "P200", "id": 3, "minVol": 20, "maxVol": 200, "volume": 20, "volChange": 1, "description": "P 200 micropipette. Used to draw up and dispense volumes of liquid between 20 and 200 microliters." } },
+            { "component": "Pipette", "props": { "type": "P1000", "id": 4, "minVol": 200, "maxVol": 1000, "volume": 200, "volChange": 10, "description": "P 1000 micropipette. Used to draw up and dispense volumes of liquid between 200 and 1000 microliters." } }
+        ],
+        "position": {"left": 83, "top": 363}
+    },
+    "Tip Boxes": {
+        "components": [
+            { "component": "Tip Box", "props": { "type": "P2", "id": 1, "description": "Box of P 2 tips. Tips are attached to the micropipette and discarded after single use to avoid contamination between transfers." } },
+            { "component": "Tip Box", "props": { "type": "P20", "id": 2, "description": "Box of P 20 tips. Tips are attached to the micropipette and discarded after single use to avoid contamination between transfers." } },
+            { "component": "Tip Box", "props": { "type": "P200", "id": 3, "description": "Box of P 200 tips. Tips are attached to the micropipette and discarded after single use to avoid contamination between transfers." } },
+            { "component": "Tip Box", "props": { "type": "P1000", "id": 4, "description": "Box of P 1000 tips. Tips are attached to the micropipette and discarded after single use to avoid contamination between transfers." } }
+        ],
+        "position": {"left": 450, "top": 161}
+    },
+    "Solutions": {
+        "components": [
+            { "component": "Solution", "props": { "type": "Red Dye", "id": 1, "volume": 50, "solutions": { "Red Dye": 50 }, "description": "Red dye in tube." } }
+        ],
+        "position": {"left": 330, "top": 539}
+    },
+    "Blotting Paper": {
+        "components": [
+            { "component": "Blotting Paper", "props": { "type": "Blotting Paper", "id": 1 ,
+              "solutions":[
+                {"id": "A","used": false, "solution": null, "prediction": 0, "volume": 0, "maxVol": 50, "minVol": 2, "volChange": 0.5},
+                {"id": "B","used": false, "solution": null, "prediction": 0, "volume": 0, "maxVol": 50, "minVol": 2, "volChange": 0.5},
+                {"id": "C","used": false, "solution": null, "prediction": 0, "volume": 0, "maxVol": 50, "minVol": 2, "volChange": 0.5},
+                {"id": "D","used": false, "solution": null, "prediction": 0, "volume": 0, "maxVol": 50, "minVol": 2, "volChange": 0.5}
+              ],
+              "description": "Blotting paper with four sections (A, B, C, D). Used to practice dispensing liquids of different volumes with a micropipette."
+            } }
+        ],
+        "position": {"left": 465, "top": 550}
+    },
+    "Trash": {
+        "components": [
+            { "component": "Trash", "props": { "type": "Trash", "id": 1, "description": "Waste container. Used to dispose of any non-hazardous waste resulting from the experiment, including micropipette tips." } }
+        ],
+        "position": {"left": 727, "top": 592}
+    }
+}

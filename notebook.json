@@ -1,0 +1,1238 @@
+{
+  "Notebook": {
+    "Title": "Lab Notebook",
+    "Content": {
+      "Context": {
+        "complete": false
+      },
+      "Materials": {
+        "complete": false
+      },
+      "Protocol": {
+        "Sequence": [
+          {
+            "label": "Preparing the P20 micropipette.",
+            "complete": false,
+            "action": "",
+            "comments": "",
+            "steps": [
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Select the P20 micropipette.",
+                    "criteria": {
+                      "actions": [
+                        "SET_HELD"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/held=true"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Try clicking!",
+                      "msg": "You can select items in the lab by clicking on them.",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "Select the P20 micropipette.",
+                    "criteria": {
+                      "actions": [
+                        "SET_HELD"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/held=true"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Select the micropipette.",
+                    "criteria": {
+                      "actions": [
+                        "SET_HELD"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/held=true"
+                      ]
+                    }
+                  }
+                },
+                "action": "$user picked up the P20 micropipette.",
+                "aria": "Select the P twenty micropipette.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Select the volume setting to set the volume to 20 μl and then select Save volume.",
+                    "criteria": {
+                      "actions": [
+                        "SET_PIPETTE_VOL"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/volume<=20&volume>=2"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "When micropipetting, volumes are typically measured in microliters (μl).",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "Select the volume setting and set the volume to 20 μl.",
+                    "criteria": {
+                      "actions": [
+                        "SET_PIPETTE_VOL"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/volume<=20&volume>=2"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Set the volume to 20 μl.",
+                    "criteria": {
+                      "actions": [
+                        "SET_PIPETTE_VOL"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/volume<=20&volume>=2"
+                      ]
+                    }
+                  }
+                },
+                "action": "$user set the P20 micropipette volume to $value",
+                "aria": "Select the volume setting to set the volume to twenty microliters and then click the save volume button.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Select the P20 tip box to open it.",
+                    "criteria": {
+                      "actions": [
+                        "TIP_BOX_OPEN"
+                      ],
+                      "critPaths": [
+                        "tipBoxes/type=P20/conditions/open=true"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Never set a micropipette to a volume above or below the maximum or minimum specified volume. This may negatively affect the calibration of the micropipette, leading to less accuracy when transferring liquids.",
+                      "fired": false
+                      }]
+                  },
+                  "l2": {
+                    "task": "Open the P20 tip box.",
+                    "criteria": {
+                      "actions": [
+                        "TIP_BOX_OPEN"
+                      ],
+                      "critPaths": [
+                        "tipBoxes/type=P20/conditions/open=true"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Micropipettes should always be used within the specified volume range to avoid negatively affecting the calibration of the micropipette.",
+                      "fired": false
+                    }]
+                  },
+                  "l3": {
+                    "task": "Open the tip box.",
+                    "criteria": {
+                      "actions": [
+                        "TIP_BOX_OPEN"
+                      ],
+                      "critPaths": [
+                        "tipBoxes/type=P20/conditions/open=true"
+                      ]
+                    }
+                  }
+                },
+                "action": "$user placed the P20 tip on the P20 pipette",
+                "aria": "Select the P twenty tip box to open it.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Move the P20 micropipette onto the P20 tip box to attach a tip.",
+                    "criteria": {
+                      "actions": [
+                        "SET_TIP_ATTACHED"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/tipAttached=true"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "You can add tips to the micropipette by placing it on the tip box.",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "Move the micropipette to the tip box to attach a tip.",
+                    "criteria": {
+                      "actions": [
+                        "SET_TIP_ATTACHED"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/tipAttached=true"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Move the micropipette to the tip box to attach a tip.",
+                      "fired": false
+                    }]
+                  },
+                  "l3": {
+                    "task": "Attach a tip.",
+                    "criteria": {
+                      "actions": [
+                        "SET_TIP_ATTACHED"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/tipAttached=true"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Move the micropipette to the tip box to attach a tip.",
+                      "fired": false
+                    }]
+                  }
+                },
+                "action": "$user placed the P20 tip on the P20 pipette",
+                "aria": "Move the P twenty micropipette onto the P twenty tip box to attach a tip.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Select the P20 tip box to close it.",
+                    "criteria": {
+                      "actions": [
+                        "TIP_BOX_OPEN"
+                      ],
+                      "critPaths": [
+                        "tipBoxes/type=P20/conditions/open=false"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "It is important to always close tip boxes to avoid contamination.",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "Close the P20 tip box.",
+                    "criteria": {
+                      "actions": [
+                        "TIP_BOX_OPEN"
+                      ],
+                      "critPaths": [
+                        "tipBoxes/type=P20/conditions/open=false"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Close the tip box to avoid contamination.",
+                      "fired": false
+                    }]
+                  },
+                  "l3": {
+                    "task": "Close the tip box.",
+                    "criteria": {
+                      "actions": [
+                        "TIP_BOX_OPEN"
+                      ],
+                      "critPaths": [
+                        "tipBoxes/type=P20/conditions/open=false"
+                      ]
+                    }
+                  }
+                },
+                "action": "$user placed the P20 tip on the P20 pipette",
+                "aria": "Select the P twenty tip box to close it.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              }
+            ]
+          },
+          {
+            "label": "Drawing the red dye solution into the micropipette.",
+            "complete": false,
+            "action": "",
+            "comments": "",
+            "notes": [],
+            "moves": "",
+            "steps": [
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Select the red dye solution tube to open it.",
+                    "criteria": {
+                      "actions": [
+                        "SOLUTION_OPEN"
+                      ],
+                      "critPaths": [
+                        "solutions/type=Red Dye/conditions/open=true"
+                      ]
+                    }
+                  },
+                  "l2": {
+                    "task": "Open the red dye tube.",
+                    "criteria": {
+                      "actions": [
+                        "SOLUTION_OPEN"
+                      ],
+                      "critPaths": [
+                        "solutions/type=Red Dye/conditions/open=true"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Select the red dye.",
+                    "criteria": {
+                      "actions": [
+                        "SOLUTION_OPEN"
+                      ],
+                      "critPaths": [
+                        "solutions/type=Red Dye/conditions/open=true"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "Select the liquid dye solution tube to open it.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Select the micropipette and place it in the red dye solution.",
+                    "criteria": {
+                      "actions": [
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "scene/lastDrop/lastTarget/conditions/type=Solution&solution=Red Dye"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Always try and place the tip in the top layer of the solution, about 2–5 mm below the surface of the liquid.",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "Place the micropipette in the red dye.",
+                    "criteria": {
+                      "actions": [
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "scene/lastDrop/lastTarget/conditions/type=Solution&solution=Red Dye"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Place the tip in the top layer of the solution.",
+                      "fired": false
+                    }]
+                  },
+                  "l3": {
+                    "task": "Place the micropipette in the red dye.",
+                    "criteria": {
+                      "actions": [
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "scene/lastDrop/lastTarget/conditions/type=Solution&solution=Red Dye"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Always try and place the tip in the top layer of the solution.",
+                      "fired": false
+                    }]
+                  }
+                },
+                "action": "",
+                "aria": "Select the micropipette and place it in the liquid dye solution.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Draw up the red dye by first pushing down the plunger until it reaches the first stop and slowly releasing the plunger.",
+                    "criteria": {
+                      "actions": [
+                        "SET_PIPETTE_SOLUTION"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/solutionAlias=Red Dye"
+                      ]
+                    }
+                  },
+                  "l2": {
+                    "task": "Press the plunger to first stop to draw up the red dye.",
+                    "criteria": {
+                      "actions": [
+                        "SET_PIPETTE_SOLUTION"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/solutionAlias=Red Dye"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Draw up the red dye.",
+                    "criteria": {
+                      "actions": [
+                        "SET_PIPETTE_SOLUTION"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/solutionAlias=Red Dye"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "Select the plunger setting and draw up the liquid dye solution by clicking on the plunger and holding it until it reaches the first stop, then slowly release it.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Close the red dye solution tube.",
+                    "criteria": {
+                      "actions": [
+                        "SOLUTION_OPEN"
+                      ],
+                      "critPaths": [
+                        "solutions/type=Red Dye/conditions/open=false"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Always close the lids on tubes to avoid contamination.",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "Close the red dye tube.",
+                    "criteria": {
+                      "actions": [
+                        "SOLUTION_OPEN"
+                      ],
+                      "critPaths": [
+                        "solutions/type=Red Dye/conditions/open=false"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Never put the micropipette with liquid drawn up down on the bench.",
+                      "fired": false
+                    }]
+                  },
+                  "l3": {
+                    "task": "",
+                    "criteria": {
+                      "actions": [
+                        "SOLUTION_OPEN",
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "solutions/type=Red Dye/conditions/open=false",
+                        "scene/lastDrop/lastTarget/conditions/type=BlottingPaper&id=1&subId=A"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "Close the liquid dye solution tube by clicking on it.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              }
+            ]
+          },
+          {
+            "label": "Dispensing the red dye solution onto a blotting paper.",
+            "complete": false,
+            "action": "",
+            "comments": "",
+            "moves": "",
+            "steps": [
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Move the micropipette to circle A on the blotting paper to dispense the red dye.",
+                    "criteria": {
+                      "actions": [
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "scene/lastDrop/lastTarget/conditions/type=BlottingPaper&id=1&subId=A"
+                      ]
+                    }
+                  },
+                  "l2": {
+                    "task": "Move the micropipette to circle A on the blotting paper.",
+                    "criteria": {
+                      "actions": [
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "scene/lastDrop/lastTarget/conditions/type=BlottingPaper&id=1&subId=A"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "",
+                    "criteria": {
+                      "actions": [
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "scene/lastDrop/lastTarget/conditions/type=BlottingPaper&id=1&subId=A"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "Move the micropipette to circle A on the blotting paper to dispense the liquid dye.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Dispense the red dye by holding down the plunger until it reaches the second stop and slowly releasing it.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=A/conditions/solutionAlias=Red Dye&volume=20"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "To remove the liquid from a micropipette, press the plunger down to the second stop.",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "Dispense the red dye by pressing the plunger to the second stop.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=A/conditions/solutionAlias=Red Dye&volume=20"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Dispense the red dye onto circle A.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=A/conditions/solutionAlias=Red Dye&volume=20"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "Select the plunger setting and dispense the liquid dye by pushing on the plunger and holding it until it reaches the second stop, then slowly release it.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Move the micropipette over the trash can and press on the eject mechanism to eject the tip.",
+                    "criteria": {
+                      "actions": [
+                        "SET_TIP_ATTACHED"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/tipAttached=false"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Always discard the tip in the trash after use and attach a new tip when drawing up liquid to avoid contamination.",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "Move the micropipette over the trash can and press the eject mechanism to eject the tip.",
+                    "criteria": {
+                      "actions": [
+                        "SET_TIP_ATTACHED"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/tipAttached=false"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Press on the eject mechanism to eject the tip.",
+                    "criteria": {
+                      "actions": [
+                        "SET_TIP_ATTACHED"
+                      ],
+                      "critPaths": [
+                        "pipettes/type=P20/conditions/tipAttached=false"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "Move the micropipette over the trash can and click on the eject setting to eject the tip.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "Select the P20 micropipette and place it back onto the rack.",
+                    "criteria": {
+                      "actions": [
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "scene/lastDrop/lastTarget/conditions/type=PipetteRack"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "Always place the micropipette back on the rack when you are finished using it.",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "Place the micropipette back onto the rack.",
+                    "criteria": {
+                      "actions": [
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "scene/lastDrop/lastTarget/conditions/type=PipetteRack"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Place the micropipette back onto the rack.",
+                    "criteria": {
+                      "actions": [
+                        "SET_LAST_DROP"
+                      ],
+                      "critPaths": [
+                        "scene/lastDrop/lastTarget/conditions/type=PipetteRack"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "Select the P20 micropipette and place it back onto the rack.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              }
+            ]
+          },
+          {
+            "label": "Dispensing different volumes of red dye solution onto a blotting paper.",
+            "complete": false,
+            "action": "",
+            "comments": "",
+            "moves": "",
+            "steps": [
+              {
+                "levels": {
+                  "l1": {
+                    "task": "In circle B on the blotting paper, follow the same process as before to dispense 15 μl of red dye.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=B/conditions/solutionAlias=Red Dye&volume=15"
+                      ]
+                    },
+                    "hints": [{
+                      "type": "HINT",
+                      "title": "Hint!",
+                      "msg": "You can change the volume on the micropipette and follow the same procedure to transfer different amounts of liquid.",
+                      "fired": false
+                    }]
+                  },
+                  "l2": {
+                    "task": "In circle B on the blotting paper, dispense 15 μl red dye.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=B/conditions/solutionAlias=Red Dye&volume=15"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Dispense 15 μl onto circle B.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=B/conditions/solutionAlias=Red Dye&volume=15"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "In circle B on the blotting paper, follow the same process as before to dispense 15 microliters of liquid dye.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "In circle C on the blotting paper, follow the same process as before to dispense 7.5 μl of red dye.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=C/conditions/solutionAlias=Red Dye&volume=7.5"
+                      ]
+                    }
+                  },
+                  "l2": {
+                    "task": "In circle C on the blotting paper, dispense 7.5 μl red dye.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=C/conditions/solutionAlias=Red Dye&volume=7.5"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Dispense 7.5 μl onto circle C.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=C/conditions/solutionAlias=Red Dye&volume=7.5"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "In circle C on the blotting paper, follow the same process as before to dispense 7.5 microliters of liquid dye.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              },
+              {
+                "levels": {
+                  "l1": {
+                    "task": "In circle D on the blotting paper, follow the same process as before to dispense 2 μl of red dye.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=D/conditions/solutionAlias=Red Dye&volume=2"
+                      ]
+                    }
+                  },
+                  "l2": {
+                    "task": "In circle D on the blotting paper, dispense 2 μl red dye.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=D/conditions/solutionAlias=Red Dye&volume=2"
+                      ]
+                    }
+                  },
+                  "l3": {
+                    "task": "Dispense 2 μl onto circle D.",
+                    "criteria": {
+                      "actions": [
+                        "DEPOSIT_BLOT_PAPER"
+                      ],
+                      "critPaths": [
+                        "blotPapers/id=1/solutions/id=D/conditions/solutionAlias=Red Dye&volume=2"
+                      ]
+                    }
+                  }
+                },
+                "action": "",
+                "aria": "In circle D on the blotting paper, follow the same process as before to dispense 2 microliters of liquid dye.",
+                "comments": "",
+                "notes": [],
+                "complete": false
+              }
+            ]
+          }
+        ],
+        "Notes": [],
+        "complete": false
+      },
+      "Results": {
+        "complete": false
+      },
+      "Summary": {
+        "complete": false
+      },
+      "Reflection": {
+        "complete": false,
+        "components": [
+          {
+            "component": "SCQ",
+            "props": {
+              "type": "SCQ",
+              "id": 1,
+              "levels": {
+                "l1": {
+                  "label": "What do you think the main purpose of this simulation is?",
+                  "choices": [
+                    {
+                      "label": "To learn about the different equipment you will encounter in a lab.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "To familiarize yourself with proper lab etiquette.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "To learn the correct way to handle a micropipette in a laboratory.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 2,
+                  "correct": null
+                },
+                "l2": {
+                  "label": "What do you think the main purpose of this simulation is?",
+                  "choices": [
+                    {
+                      "label": "To learn about the different equipment you will encounter in a lab.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "To familiarize yourself with proper lab etiquette.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "To learn the correct way to handle a micropipette in a laboratory.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 2,
+                  "correct": null
+                },
+                "l3": {
+                  "label": "What do you think the main purpose of this simulation is?",
+                  "choices": [
+                    {
+                      "label": "To learn how to set and use a micropipette.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "To learn about the surface tension of red dye.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "To familiarize yourself with proper lab etiquette.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 0,
+                  "correct": null
+                }
+              }
+            }
+          },
+          {
+            "component": "SCQ",
+            "props": {
+              "type": "SCQ",
+              "id": 2,
+              "levels": {
+                "l1": {
+                  "label": "Why is it important to push the plunger to the first stop when drawing up liquid?",
+                  "choices": [
+                    {
+                      "label": "If you go to the second stop it will blow air bubbles into the sample.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "If you go to the second stop you will measure too much liquid.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Going to the first stop prevents you from measuring too little liquid.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 1,
+                  "correct": null
+                },
+                "l2": {
+                  "label": "Why is it important to press the plunger down to second stop when expelling liquid from a micropipette?",
+                  "choices": [
+                    {
+                      "label": "To clean the micropipette.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "To ensure all the liquid in the tip is expelled.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "To reload the mechanism in the micropipette for future transfers.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 1,
+                  "correct": null
+                },
+                "l3": {
+                  "label": "A student informs you that you can use a micropipette tip more than once when transferring solutions to different tubes. Do you think this is a good idea or bad idea, and why?",
+                  "choices": [
+                    {
+                      "label": "Good idea – tips are expensive and re-using them will save money.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Bad idea – the tip might become contaminated in the process, which could negatively affect the experiment.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Good idea – it takes time to change the tip and using the same tip more than once will speed up the experiment.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 1,
+                  "correct": null
+                }
+              }
+            }
+          },
+          {
+            "component": "SCQ",
+            "props": {
+              "type": "SCQ",
+              "id": 3,
+              "levels": {
+                "l1": {
+                  "label": "If the window on a P20 micropipette displays from top to bottom the numbers 1 5 5 what volume is it measuring?",
+                  "choices": [
+                    {
+                      "label": "1.55 microlitres",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "15.5 microliters",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "155 microliters",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 1,
+                  "correct": null
+                },
+                "l2": {
+                  "label": "At the end of a micropipetting procedure, a student ended up with less than the volume they intended to measure. What might have gone wrong?",
+                  "choices": [
+                    {
+                      "label": "They may have pushed the plunger to the second stop when drawing up liquid.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "They may have drawn up the sample too quickly and had air bubbles in the liquid.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "They may have not used a disposable tip.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 1,
+                  "correct": null
+                },
+                "l3": {
+                  "label": "To ensure that all the liquid is expelled in your tube, you should:",
+                  "choices": [
+                    {
+                      "label": "Place the tip at the bottom of the tube.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Place the tip above the level of the solution.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Place the tip in the top layer of the solution.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 2,
+                  "correct": null
+                }
+              }
+            }
+          },
+          {
+            "component": "SCQ",
+            "props": {
+              "type": "SCQ",
+              "id": 4,
+              "levels": {
+                "l1": {
+                  "label": "What is the purpose of disposable tips on a micropipette?",
+                  "choices": [
+                    {
+                      "label": "In order to prevent cross contamination between samples.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "To reach into small tubes.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "The disposable tips make the micropipettes measure larger volumes.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 0,
+                  "correct": null
+                },
+                "l2": {
+                  "label": "If you do not change tips between solutions what may occur?",
+                  "choices": [
+                    {
+                      "label": "You may measure a volume less than intended because there is residual liquid in the tip.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "You may cross contaminate the liquids you are measuring.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "You may improve the efficiency of your experiment by saving plastic and time.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 1,
+                  "correct": null
+                },
+                "l3": {
+                  "label": "If you needed to pipette a volume of 20.5 μl with a P20 micropipette, you would: ",
+                  "choices": [
+                    {
+                      "label": "Pipette a volume of 20 μl, followed by a volume of 0.5 μl.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Pipette a volume of 20.5 μl in a single transfer.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Pipette a volume of 10 μl, followed by a volume of 10.5 μl.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": 2,
+                  "correct": null
+                }
+              }
+            }
+          },
+          {
+            "component": "SCQ",
+            "props": {
+              "type": "SCQ",
+              "id": 5,
+              "levels": {
+                "l1": {
+                  "label": "How confident do you feel about using the technique you learned?",
+                  "choices": [
+                    {
+                      "label": "Very confident.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Moderately confident.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "I do not feel confident using the technique.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": null,
+                  "correct": null
+                },
+                "l2": {
+                  "label": "How confident do you feel about using the technique you learned?",
+                  "choices": [
+                    {
+                      "label": "Very confident.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Moderately confident.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "I do not feel confident using the technique.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": null,
+                  "correct": null
+                },
+                "l3": {
+                  "label": "How confident do you feel about using the technique you learned?",
+                  "choices": [
+                    {
+                      "label": "Very confident.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "Moderately confident.",
+                      "checked": false,
+                      "correct": null
+                    },
+                    {
+                      "label": "I do not feel confident using the technique.",
+                      "checked": false,
+                      "correct": null
+                    }
+                  ],
+                  "attempts": 2,
+                  "answer": null,
+                  "correct": null
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
